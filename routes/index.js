@@ -7,7 +7,7 @@ router.get("/", function (req, res, next) {
   var post_list = req.app.get("poststore");
 
   res.render("index", {
-    title: "MICROJUNK",
+    title: "The New Twitter",
     post_list: post_list
   });
 });

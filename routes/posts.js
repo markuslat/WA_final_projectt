@@ -69,7 +69,7 @@ router.post("/create", sanitizeBody("*").trim().escape(), function (
   console.log("Time: " + time, date1);
 
   if (local_content.length <= 280) {
-    if (local_content && local_author !== "") {
+    if (local_content !== "") {
       req.app.get("poststore").unshift({
         author: local_author,
         content: local_content,
